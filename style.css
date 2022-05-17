@@ -1,0 +1,211 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url(Norse-Bold.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body {
+    background-color: black;
+
+
+
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    max-width: 70vw;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+.side-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("halie-west-25xggax4bSA-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40%;
+
+}
+
+.logo {
+    margin-top: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Norse-Bold, Arial, Helvetica, sans-serif;
+    font-size: 6rem;
+    color: #fff;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 8rem;
+}
+
+.logo>img {
+    height: 6rem;
+}
+.side-left>p {
+    margin-top: auto;
+    margin-bottom: 0;
+}
+.side-left a{
+    text-decoration: none;
+    color: white;
+}
+.side-right {
+    width: 60%;
+}
+
+.side-right>form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+.header {
+    background-color: rgb(240, 240, 240);
+    min-height: 33%;
+    padding-top: 6rem;
+    padding-left: 3rem;
+
+}
+
+form {
+    background-color: rgb(240, 240, 240);
+}
+
+form p {
+    font-size: calc(12px + 0.8vw);
+    padding-bottom: 2rem;
+    font-weight: bolder;
+}
+
+.user-data {
+    background-color: #fff;
+    padding-left: 3rem;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11),
+        0 2px 2px rgba(0, 0, 0, 0.11),
+        0 4px 4px rgba(0, 0, 0, 0.11),
+        0 6px 8px rgba(0, 0, 0, 0.11),
+        0 8px 16px rgba(0, 0, 0, 0.11);
+    margin-bottom: 16px;
+}
+
+.user-data>p {
+    padding-top: 1.5rem;
+
+}
+
+.form-textfield-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+}
+
+.textfield-div {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+    width: 260px;
+}
+
+.textfield-div label {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding-bottom: 2px;
+}
+
+.textfield-div input {
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: #FFFFFF;
+    border: 1px solid #D6D9DC;
+    border-radius: 5px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+    margin-bottom: 1.5rem;
+}
+
+.textfield-div input:focus {
+    outline: none;
+    border: 2px solid blue;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    
+}
+.textfield-div input[type="password"]:not(:focus):invalid{
+    border: 1px solid #D6D9DC;
+}
+.textfield-div input[type="password"]:focus:invalid{
+    outline: none;
+    border: 2px solid blue;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.textfield-div input[type="password"].error:invalid {
+    border: 1px solid red;
+}
+#password1 + span {
+    position: relative;
+    display: none;
+}
+
+#password1 + span::after{
+    position: absolute;
+    top: -20px;
+    color: red;
+    content: "* Passwords do not match";
+}
+
+.submit {
+    padding-top: 2rem;
+    padding-left: 3rem;
+    background-color: rgb(240, 240, 240);
+}
+
+.submit p {
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.submit input[type="button"] {
+    padding: 20px 50px;
+    margin-bottom: 1rem;
+    width: 220px;
+    color: #fff;
+    background-color: rgb(7, 134, 7);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.submit input[type="button"]:active{
+    box-shadow: none;
+}
+
+.submit a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(7, 134, 7);
+}

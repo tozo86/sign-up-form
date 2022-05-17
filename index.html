@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="signup.js" defer ></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="side-left">
+            <div class="logo"><img src="odin-lined.png" alt="odin-logo"><p>ODIN</p></div>
+            <p><a href="https://unsplash.com/photos/25xggax4bSA" target="_blank"> Credit to Halie West</a></p>
+        </div>
+
+        <div class="side-right">
+            <form action="" method="post" novalidate>
+                <div class="header">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet consectetur adipisicing elit.
+                        repellat eligendi voluptatum, dignissimos iure dicta.</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="user-data">
+                    
+                        <p>Let's do this</p>
+                        <div class="form-textfield-container">
+                            <div class="textfield-div">
+                                <label for="first-name">First name</label>
+                                <input type="text" name="first-name" id="first-name">
+                            </div>
+                            <div class="textfield-div">
+                                <label for="last-name">Last name</label>
+                                <input type="text" name="last-name" id="last-name">
+                            </div>
+                            <div class="textfield-div">
+                                <label for="e-mail">E-mail</label>
+                                <input type="email" name="e-mail" id="e-mail">
+                            </div>
+                            <div class="textfield-div">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" name="phone" id="phone">
+                            </div>
+                            <div class="textfield-div">
+                                <label for="password1">Password</label>
+                                <input type="password" name="password1" id="password1" minlength="8" required>
+                                <span id="errorMsg"></span>
+                            </div>
+                            <div class="textfield-div">
+                                <label for="password2">Confirm password</label>
+                                <input type="password" name="password2" id="password2" minlength="8" required>
+                                <span></span>
+                            </div>
+                        </div>
+                    
+                </div>
+                <div class="submit">
+                    <input type="button" value="Create Account">
+                    <p>Already have an Account? <a href="#">Log in</a></p>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</body>
+
+</html>
