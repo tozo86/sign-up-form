@@ -209,3 +209,11 @@ form p {
     font-weight: bold;
     color: rgb(7, 134, 7);
 }
+
+@media screen and (max-width:1000px) {
+
+    .container{
+        max-width:100vw;
+    }
+    
+}
